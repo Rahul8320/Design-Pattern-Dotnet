@@ -1,6 +1,7 @@
 ﻿using OopsPrinciples.Abstraction;
 using OopsPrinciples.Encapsulation;
 using OopsPrinciples.Inheritance;
+using OopsPrinciples.Polymorphism;
 
 var bankAccount = new BadBankAccount
 {
@@ -40,3 +41,20 @@ var bike = new Bike(brand: "RE", model: "Himalayan 450", year: 2026);
 bike.Start();
 bike.Details();
 bike.Stop();
+
+
+// Polymorphism
+var vehicles = new List<Vehicle2>()
+{
+    new Car2(brand: "RR", model: "Ghost", year: 2025, noOfDoors: 4),
+    new Bike2(brand: "RE", model: "Himalayan 450", year: 2026),
+    new Bike2(brand: "HD", model: "Fat Boy", year: 2024)
+    {
+        IsHelmetIncluded = true,
+    }
+};
+
+foreach (var vehicle in vehicles)
+{
+    vehicle.Feature();
+}
