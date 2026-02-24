@@ -15,3 +15,7 @@ Implementation of design patterns in DotNet language.
     `Poly` means many and `Morph` means forms. Polymorphism is the ability of an object to take many forms.
  - [Coupling](./OopsPrinciples/Coupling/)
     The degree of dependency between different classes.
+ - [Composition](./OopsPrinciples/Composition/)
+    Composition involves creating complex objects by combining simpler objects or components.
+    In composition, objects are assembled together to form larger structures, with each component object maintaining its own state and behavior.
+    Composition is often described in the terms of `"Has-A"` relationship.

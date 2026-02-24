@@ -1,4 +1,5 @@
 ﻿using OopsPrinciples.Abstraction;
+using OopsPrinciples.Composition;
 using OopsPrinciples.Coupling;
 using OopsPrinciples.Encapsulation;
 using OopsPrinciples.Inheritance;
@@ -63,3 +64,7 @@ foreach (var vehicle in vehicles)
 // Coupling
 var orderService = new OrderService(new SmsSender());
 orderService.PlaceOrder();
+
+// Composition
+var order = new Order();
+order.CreateOrder();
