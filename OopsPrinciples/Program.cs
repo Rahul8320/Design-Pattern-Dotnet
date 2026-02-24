@@ -1,15 +1,16 @@
-﻿using OopsPrinciples.Encapsulation;
+﻿using OopsPrinciples.Abstraction;
+using OopsPrinciples.Encapsulation;
 
 var bankAccount = new BadBankAccount
 {
     Balance = 100
 };
 
-System.Console.WriteLine(bankAccount.Balance);
+Console.WriteLine(bankAccount.Balance);
 
 // But clint app can modify this balance, no encapsulation
 bankAccount.Balance = -500;
-System.Console.WriteLine(bankAccount.Balance); 
+Console.WriteLine(bankAccount.Balance);
 
 // var account = new BankAccount(-500); // Throw an exception
 var account = new BankAccount(100);
@@ -23,3 +24,7 @@ account.Deposit(500);
 account.Withdraw(200);
 balance = account.GetBalance();
 Console.WriteLine($"Your Current Balance: $ {balance}");
+
+// Abstraction (Reduce complexity by hiding unnecessary details)
+var emailService = new EmailService();
+emailService.SendEmail();
