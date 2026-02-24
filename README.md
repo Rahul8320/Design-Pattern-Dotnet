@@ -13,4 +13,5 @@ Implementation of design patterns in DotNet language.
     Inheritance is often described in terms of an `"Is-A"` relationship. 
  - [Polymorphism](./OopsPrinciples/Polymorphism/)
     `Poly` means many and `Morph` means forms. Polymorphism is the ability of an object to take many forms.
-
+ - [Coupling](./OopsPrinciples/Coupling/)
+    The degree of dependency between different classes.
