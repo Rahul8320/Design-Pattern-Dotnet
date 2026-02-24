@@ -1,5 +1,6 @@
 ﻿using OopsPrinciples.Abstraction;
 using OopsPrinciples.Encapsulation;
+using OopsPrinciples.Inheritance;
 
 var bankAccount = new BadBankAccount
 {
@@ -28,3 +29,14 @@ Console.WriteLine($"Your Current Balance: $ {balance}");
 // Abstraction (Reduce complexity by hiding unnecessary details)
 var emailService = new EmailService();
 emailService.SendEmail();
+
+// Inheritance 
+var car = new Car(brand: "RR", model: "Ghost", year: 2025, noOfDoors: 4);
+car.Start();
+car.Details();
+car.Stop();
+
+var bike = new Bike(brand: "RE", model: "Himalayan 450", year: 2026);
+bike.Start();
+bike.Details();
+bike.Stop();
