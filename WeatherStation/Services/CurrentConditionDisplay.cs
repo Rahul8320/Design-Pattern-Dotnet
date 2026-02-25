@@ -1,4 +1,5 @@
 using WeatherStation.Interfaces;
+using WeatherStation.Models;
 
 namespace WeatherStation.Services;
 
@@ -20,10 +21,10 @@ public class CurrentConditionDisplay : IObserver, IDisplayElement
         Console.WriteLine($"Current conditions: {Temperature} F degree and {Humidity} % humidity.");
     }
 
-    public void Update(double temp, double humidity, double _)
+    public void Update(Weather weather)
     {
-        Temperature = temp;
-        Humidity = humidity;
+        Temperature = weather.Temperature;
+        Humidity = weather.Humidity;
         Display();
     }
 }

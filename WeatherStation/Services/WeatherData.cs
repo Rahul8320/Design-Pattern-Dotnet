@@ -1,20 +1,18 @@
 using WeatherStation.Interfaces;
+using WeatherStation.Models;
 
 namespace WeatherStation.Services;
 
 public class WeatherData : ISubject
 {
     private readonly List<IObserver> _observers = [];
-
-    private double Temperature { get; set; }
-    private double Humidity { get; set; }
-    private double Pressure { get; set; }
+    private Weather Weather { get; set; } = default!;
 
     public void NotifyObservers()
     {
         foreach (var observer in _observers)
         {
-            observer.Update(temp: Temperature, humidity: Humidity, pressure: Pressure);
+            observer.Update(weather: Weather);
         }
     }
 
@@ -40,9 +38,7 @@ public class WeatherData : ISubject
 
     public void SetMeasurements(double temp, double humidity, double pressure)
     {
-        Temperature = temp;
-        Humidity = humidity;
-        Pressure = pressure;
+        Weather = new Weather(Temperature: temp, Humidity: humidity, Pressure: pressure);
 
         MeasurementChanged();
     }
