@@ -19,3 +19,7 @@ Implementation of design patterns in DotNet language.
     Composition involves creating complex objects by combining simpler objects or components.
     In composition, objects are assembled together to form larger structures, with each component object maintaining its own state and behavior.
     Composition is often described in the terms of `"Has-A"` relationship.
+
+## Observer Pattern
+
+ - [Weather Station](./WeatherStation/)
