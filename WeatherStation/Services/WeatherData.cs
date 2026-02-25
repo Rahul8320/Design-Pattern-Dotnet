@@ -6,7 +6,7 @@ namespace WeatherStation.Services;
 public class WeatherData : ISubject
 {
     private readonly List<IObserver> _observers = [];
-    private Weather Weather { get; set; } = default!;
+    private Weather Weather { get; set; } = new Weather(0, 0, 0);
 
     public void NotifyObservers()
     {
