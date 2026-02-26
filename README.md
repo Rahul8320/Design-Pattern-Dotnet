@@ -23,6 +23,9 @@ Implementation of design patterns in DotNet language.
 ## SOLID Principles
  - [Single Responsibility Principle](./SolidPrinciples/SRP/)
    SRP => A class should have only one reason to change, meaning that it should have only one responsibility or purpose.
+ - [Open/Closed Principle](./SolidPrinciples/OCP/)
+   OCP => Software entities (classes, modules, functions, etc.) should be open for extensions but closed for modifications.
+
 
 ## Observer Pattern
 
