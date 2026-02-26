@@ -20,6 +20,10 @@ Implementation of design patterns in DotNet language.
     In composition, objects are assembled together to form larger structures, with each component object maintaining its own state and behavior.
     Composition is often described in the terms of `"Has-A"` relationship.
 
+## SOLID Principles
+ - [Single Responsibility Principle](./SolidPrinciples/SRP/)
+   SRP => A class should have only one reason to change, meaning that it should have only one responsibility or purpose.
+
 ## Observer Pattern
 
  - [Weather Station](./WeatherStation/)
