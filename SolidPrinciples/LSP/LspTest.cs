@@ -6,34 +6,30 @@ namespace SolidPrinciples.LSP;
 public class LspTest
 {
     [Test, Description("Test rectangle area")]
-    public void Test_Rectangle_Area()
+    public void Rectangle_Shape_Area()
     {
         const double height = 10;
         const double width = 5;
-        var rectangle = new Rectangle
+        
+        Shape rectangle = new Rectangle
         {
             Height = height,
             Width = width
         };
 
-        Assert.AreEqual(rectangle.Width, width);
-        Assert.AreEqual(rectangle.Height, height);
         Assert.AreEqual(rectangle.Area, height * width);
     }
 
     [Test, Description("Test square area")]
-    public void Test_Square_Area()
+    public void Square_Shape_Area()
     {
-        const double height = 10;
-        const double width = 5;
-        var rectangle = new Square()
+        const double length = 10;
+
+        Shape square = new Square()
         {
-            Height = height,
-            Width = width
+            Length = length
         };
 
-        Assert.AreEqual(rectangle.Width, width);
-        Assert.AreEqual(rectangle.Height, height);
-        Assert.AreEqual(rectangle.Area, height * width);
+        Assert.AreEqual(square.Area, length * length);
     }
 }

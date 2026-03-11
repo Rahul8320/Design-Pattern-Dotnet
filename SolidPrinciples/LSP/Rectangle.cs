@@ -2,7 +2,9 @@
 
 public class Rectangle : Shape
 {
-    public override double Width { get; set; }
+    public double Width { get; init; }
 
-    public override double Height { get; set; }
+    public double Height { get; init; }
+    
+    public override double Area => Width * Height;
 }

@@ -1,16 +1,8 @@
 ﻿namespace SolidPrinciples.LSP;
 
-public class Square : Rectangle
+public class Square : Shape
 {
-    public override double Height
-    {
-        get => base.Height;
-        set => base.Height = base.Width = value;
-    }
-
-    public override double Width
-    {
-        get => base.Width;
-        set => base.Width = base.Height = value;
-    }
+    public double Length { get; set; }
+    
+    public override double Area => Length * Length;
 }
