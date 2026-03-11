@@ -28,6 +28,8 @@ Implementation of design patterns in DotNet language.
    OCP => Software entities (classes, modules, functions, etc.) should be open for extensions but closed for modifications.
  - [Liskov Substitution Principle](./SolidPrinciples/LSP)
    LSP => Objects of a superclass should be replaceable with objects of its subclass without affecting the correctness of the program.
+ - [Interface Segregation Principle](./SolidPrinciples/ISP)
+   ISP => Clients should not be forced to depend on interfaces they do not use.
 
 
 ## Observer Pattern
